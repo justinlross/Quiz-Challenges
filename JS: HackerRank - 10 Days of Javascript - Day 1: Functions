@@ -1,0 +1,16 @@
+function factorial(n) {
+    var countVar = n;
+    var arrayNumbers = [];
+    var sum = 1;
+
+    while (countVar > 0) {
+        arrayNumbers.push(countVar);
+        countVar = countVar-1;
+    }
+
+    for (var i = 0; i < arrayNumbers.length; i++) {
+        sum *= arrayNumbers[i];
+    }
+    
+    return (sum) ;
+}
