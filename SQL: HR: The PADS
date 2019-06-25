@@ -1,0 +1,8 @@
+select concat(Name,'(',Substring(Occupation,1,1),')') as Name
+FROM OCCUPATIONS
+ORDER BY Name ASC;
+
+select concat('There are a total of ',count(occupation),' ',lower(Occupation),'s.') as total
+FROM OCCUPATIONS
+group by occupation
+order by total;
