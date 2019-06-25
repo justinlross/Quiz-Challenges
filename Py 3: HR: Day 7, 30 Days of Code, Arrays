@@ -1,0 +1,7 @@
+arrVar = arr[::-1]
+stringOut = ''
+
+for item in arrVar:
+    stringOut += str(item) + ' '
+
+print(stringOut)
