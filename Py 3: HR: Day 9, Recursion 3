@@ -1,0 +1,10 @@
+# Complete the factorial function below. A factorial is the product of all integers equal and below. IE factorial of 3 is 1x2x3 = 6
+def factorial(n):
+    integerList = []
+    result = 1
+    while n != 0:
+        integerList.append(n)
+        n = n -1
+    for x in integerList: 
+         result = result * x  
+    return result
