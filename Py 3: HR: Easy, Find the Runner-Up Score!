@@ -1,0 +1,17 @@
+firstMax = float('-inf')
+secondMax = float('-inf')
+arrayVar = []
+
+for items in arr:
+    arrayVar.append(items)
+
+for firstNumber in arrayVar:
+    if firstNumber > firstMax:
+        firstMax = firstNumber
+
+for secondNumber in arrayVar:
+    if secondNumber > secondMax:
+        if secondNumber != firstMax:
+            secondMax = secondNumber
+
+print(secondMax)
